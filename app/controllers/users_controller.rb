@@ -1,8 +1,18 @@
 class UsersController < ApplicationController
+
   def index
     @users = User.all
 
     render json: @users
+  end
+
+  def create
+    @user = User.create(user_params)
+    if @user.valid?
+      render json: @user
+    else
+      render json: { error: 'Invalid username or password' }
+    end
   end
 
   def login
