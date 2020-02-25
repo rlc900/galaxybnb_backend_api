@@ -37,7 +37,7 @@ class UsersController < ApplicationController
   def update
    # byebug
    @user = User.find(params[:id])
-   @user.update(username: params[:username])
+   @user.update_attribute('username', params[:username])
    token = encode_token({user_id: @user.id})
    render json: {user: UserSerializer.new(@user), token: token}
  end

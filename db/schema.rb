@@ -26,8 +26,13 @@ ActiveRecord::Schema.define(version: 2020_02_21_220953) do
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
+    t.string "image"
+    t.bigint "type_id"
+    t.bigint "planet_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["planet_id"], name: "index_locations_on_planet_id"
+    t.index ["type_id"], name: "index_locations_on_type_id"
   end
 
   create_table "planets", force: :cascade do |t|
