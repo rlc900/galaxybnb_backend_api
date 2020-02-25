@@ -11,7 +11,8 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.valid?
-      render json: @user
+      token = encode_token({user_id: @user.id})
+      render json: {user: UserSerializer.new(@user), token: token}
     else
       render json: { error: 'Invalid username or password' }
     end
