@@ -42,7 +42,7 @@ class UsersController < ApplicationController
  end
 
  def destroy
-   byebug
+   # byebug
    @user = User.find(params[:id])
    @user.destroy
    render json: {message: 'Success!'}
