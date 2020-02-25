@@ -56,9 +56,18 @@ geonosis = Planet.find_by(name: 'Geonosis')
 rianna = User.create(username: 'rianna', password: '123')
 
 # ////////TYPES////////
-
 hut = Type.create(name: 'hut')
-tranquil_hut = Location.create(name: 'Tranquil Hut', image: 'https://40.media.tumblr.com/806deacfae6d547518f242cf693badc9/tumblr_n8b3nv6hDn1sn3ne4o1_500.jpg', type_id: hut.id)
+palace = Type.create(name: 'palace')
+cave = Type.create(name: 'cave')
+
+
+
+
+
+# //////LOCATIONS///////
+tranquil_hut = Location.create(name: 'Tranquil Hut', image: 'https://40.media.tumblr.com/806deacfae6d547518f242cf693badc9/tumblr_n8b3nv6hDn1sn3ne4o1_500.jpg', type_id: hut.id, planet_id: alderaan.id)
+house_of_organa = Location.create(name: 'House of Organa', image: 'https://vignette.wikia.nocookie.net/starwars/images/e/ef/Castle_Organa.png/revision/latest?cb=20150818140835', type_id: palace.id, planet_id: alderaan.id )
+forest_cave = Location.create(name: 'Alderaan Forest Cave', image: 'https://www.wallpaperup.com/uploads/wallpapers/2015/04/01/652147/97eff9483949b355f6de716841cc14ff-700.jpg', type_id: cave.id, planet_id: alderaan.id )
 
       # Type.create(name '')
       # Type.create(name '')
