@@ -44,9 +44,12 @@ coruscant = Planet.find_by(name: 'Coruscant')
   coruscant.image = 'https://vignette.wikia.nocookie.net/starwars/images/8/84/CoruscantGlobeE1.png/revision/latest?cb=20130123002137'
   coruscant.save
 
-kamino = Planet.find_by(name: 'Kamino')
-  kamino.image = 'https://i.ytimg.com/vi/hzkmWxhTJKU/maxresdefault.jpg'
-  kamino.save
+tatooine = Planet.find_by(name: 'Kamino')
+  tatooine.name = 'Tatooine'
+  tatooine.climate = 'hot and arid'
+  tatooine.terrain = 'canyons, deserts, mountains'
+  tatooine.image = 'https://i.ytimg.com/vi/hzkmWxhTJKU/maxresdefault.jpg'
+  tatooine.save
 
 geonosis = Planet.find_by(name: 'Geonosis')
   geonosis.image = 'https://vignette.wikia.nocookie.net/starwars/images/6/6d/Geonosis_AotC.png/revision/latest?cb=20121231120327'
@@ -60,11 +63,15 @@ hut = Type.create(name: 'hut')
 palace = Type.create(name: 'palace')
 castle = Type.create(name: 'castle')
 cave = Type.create(name: 'cave')
+cottage = Type.create(name: 'cottage')
 treehouse = Type.create(name: 'treehouse')
 cabana = Type.create(name: 'cabana')
 x_wing = Type.create(name: 'x-wing')
 cabin = Type.create(name: 'cabin')
 igloo = Type.create(name: 'igloo')
+house = Type.create(name: 'house')
+cloud = Type.create(name: 'cloud')
+apartment = Type.create(name: 'apartment')
 
 
 
@@ -94,35 +101,35 @@ luke_xwing = Location.create(name: 'Lukes Sunken X-Wing', image: 'https://dorksi
 murky_hut = Location.create(name: 'Murky Hut', image: 'https://cdna.artstation.com/p/assets/images/images/019/649/572/large/piotr-stanczyk-f1.jpg?1564438764', type_id: hut.id, planet_id: dagobah.id)
 
 # //////BESPIN///////
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
+cloud_house = Location.create(name: 'Lando\'s Cloud Pad', image: 'https://www.lunchboxarchitect.com/images/featured/cloud-house-mcbride-charles-ryan/cloud-house-by-mcbride-charles-ryan-11.jpg?v=1448745593', type_id: house.id, planet_id: bespin.id)
+cloud_palace = Location.create(name: 'Cloud Palace', image: 'https://vignette.wikia.nocookie.net/battlefront/images/0/0f/Bespin_Administrators_Palace_Battlefront_II.jpg/revision/latest?cb=20180321123756', type_id: palace.id, planet_id: bespin.id)
+cloud = Location.create(name: 'One Cloud', image: 'https://pvmit.com/wp-content/uploads/2016/05/cloud.jpg', type_id: cloud.id, planet_id: bespin.id)
 
 # //////ENDOR////////
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
+ewok_hut = Location.create(name: 'Ewok Hut', image: 'https://vignette.wikia.nocookie.net/starwars/images/d/dd/ST-ewokvillage.jpg/revision/latest?cb=20070811234556', type_id: hut.id, planet_id: endor.id)
+jungle_cave = Location.create(name: 'Jungle Cave', image: 'https://oy002fxxvs-flywheel.netdna-ssl.com/wp-content/uploads/2017/12/David-Unger-Exit-from-St-Hermans-Cave_21135144832_o.jpg', type_id: cave.id, planet_id: endor.id)
+jungle_loft = Location.create(name: 'Premium Ewok Loft', image: 'https://d2z2ez8lwh3r3v.cloudfront.net/bocachicaisland/wp-content/uploads/2017/01/2-bed-1240.jpg', type_id: house.id, planet_id: endor.id)
 
 # ///////NABOO////////
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
+pretty_cave = Location.create(name: 'Pretty Cave', image: 'https://i.pinimg.com/originals/6b/c5/c9/6bc5c98f29edf6e16ddbff8bc77e5d48.jpg', type_id: cave.id, planet_id: naboo.id)
+forest_cottage = Location.create(name: 'Forest Cottage', image: 'https://www.dsigners.net/wp-content/uploads/2018/10/jacob-witzling-cabin-designboom-1800.jpg', type_id: cottage.id, planet_id: naboo.id)
+theed_palace = Location.create(name: 'Theed\'s Royal Palace', image: 'https://starwarsblog.starwars.com/wp-content/uploads/2014/11/Image-1.jpg', type_id: palace.id, planet_id: naboo.id)
 
 # ////////CORUSCANT////////
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
+imperial_palace = Location.create(name: 'Imperial Palace', image: 'https://vignette.wikia.nocookie.net/starwars/images/d/d5/Imperial_Palace_Crossing_Paths.jpg/revision/latest?cb=20181015071510', type_id: palace.id, planet_id: coruscant.id)
+futuristic_apt = Location.create(name: 'Modern City Apartment', image: 'https://blenderartists.org/uploads/default/original/4X/f/5/d/f5d28f40c9ceeb2c7e4ad63753ed1f136edd1f04.jpeg', type_id: apartment.id, planet_id: coruscant.id)
+imperial_base = Location.create(name: 'Intergalactic Pad', image: 'https://www.blendswap.com/blend_previews/21341/0/0', type_id: apartment.id, planet_id: coruscant.id)
 
 # ///////KAMINO////////
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
+rocky_cave = Location.create(name: 'Rocky Cave', image: 'https://live.staticflickr.com/8844/28662958252_a88e4da3d1_b.jpg', type_id: cave.id, planet_id: tatooine.id)
+obi_hut = Location.create(name: 'Obi-Wans Hut', image: 'https://vignette.wikia.nocookie.net/starwars/images/5/52/Kenobihut.jpg/revision/latest/top-crop/width/360/height/450?cb=20180206233134', type_id: hut.id, planet_id: tatooine.id)
+lukes_house= Location.create(name: 'Lukes Casa', image: 'https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzE2YmNjMTI5LWY0MmUtNDA4Mi04NGZhLWZhMDE3YWE2ODdkOGJhOTFiZjNlMjI2NGI1YWZiMl9SV0RHV00uanBnIl0sWyJwIiwidGh1bWIiLCJ4MzkwPiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/RWDGWM.jpg', type_id: house.id, planet_id: tatooine.id)
 
 
 # ////////GEONOSIS////////
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
-= Location.create(name: '', image: '', type_id: , planet_id: )
+desert_temple = Location.create(name: 'Desert Temple', image: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Philae_Temple_R03.jpg', type_id: palace.id, planet_id: geonosis.id)
+baby_hut = Location.create(name: 'Baby Desert Hut', image: 'https://nomadsdesertretreat.com/wp-content/uploads/2019/06/D105-6758.jpg', type_id: hut.id, planet_id: geonosis.id)
+desert_cave = Location.create(name: 'Desert Cave', image: 'https://live.staticflickr.com/4420/36450569731_a3e0619cb4_b.jpg', type_id: cave.id, planet_id: geonosis.id)
 
 
 
