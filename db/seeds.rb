@@ -1,4 +1,8 @@
 require 'rest-client'
+Planet.destroy_all
+Type.destroy_all
+Location.destroy_all
+
 
 rm = RestClient.get 'https://swapi.co/api/planets'
 rm_array = JSON.parse(rm)['results']
