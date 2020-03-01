@@ -15,6 +15,8 @@ class ReviewsController < ApplicationController
   def create
     # byebug
     @review = Review.create(rating: params[:rating], user: @user, location_id: params[:location_id])
+    # byebug
     render json: @review
+    # byebug
   end
 end
