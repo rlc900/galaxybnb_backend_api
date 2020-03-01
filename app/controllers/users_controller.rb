@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     render json: @users
   end
 
+
   def create
     @user = User.create(user_params)
     if @user.valid?

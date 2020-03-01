@@ -1,5 +1,7 @@
 class ReviewsController < ApplicationController
 
+  before_action :authorized, only: [:create]
+
   def index
     @reviews = Review.all
 
@@ -11,9 +13,8 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:id])
-    @review = Review.create(rating: params[:rating], user_id: @user.id)
-
+    # byebug
+    @review = Review.create(rating: params[:rating], user: @user, location_id: params[:location_id])
     render json: @review
   end
 end
