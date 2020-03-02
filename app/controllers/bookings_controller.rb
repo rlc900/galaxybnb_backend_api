@@ -1,5 +1,8 @@
 class BookingsController < ApplicationController
 
+before_action :authorized, only: [:create]
+
+
   def index
     @bookings = Booking.all
 
@@ -7,6 +10,8 @@ class BookingsController < ApplicationController
   end
 
   def create
+    @booking = Booking.create(user: @user, location_id: params[:location_id])
 
+    render json: LocationSerializer.new(@booking.location).as_json.merge({booking_id: @booking.id})
   end
 end

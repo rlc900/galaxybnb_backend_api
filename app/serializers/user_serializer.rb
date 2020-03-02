@@ -1,9 +1,15 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :username
+  attributes :id, :username, :locationsBooked
 
-  has_many :bookings
-  has_many :booked_locations, through: :bookings, source: :location
+  # has_many :bookings
+  # has_many :booked_locations
 
   has_many :reviews
-  has_many :reviewed_locations, through: :reviews, source: :location
+  has_many :reviewed_locations
+
+  def locationsBooked
+    self.object.bookings.map do |booking|
+      LocationSerializer.new(booking.location).as_json.merge({booking_id: booking.id})
+    end
+  end
 end
