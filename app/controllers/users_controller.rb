@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       token = encode_token({user_id: @user.id})
       render json: {user: UserSerializer.new(@user), token: token}
     else
-      render json: { error: 'Invalid username or password' }
+      render json: { error: 'User is already taken!' }
     end
   end
 
