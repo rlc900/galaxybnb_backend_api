@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2020_02_21_220953) do
   create_table "bookings", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "location_id"
+    t.string "datesRange"
+    t.string "numOfTravelers"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["location_id"], name: "index_bookings_on_location_id"
