@@ -10,8 +10,8 @@ before_action :authorized, only: [:create]
   end
 
   def create
-    @booking = Booking.create(user: @user, location_id: params[:location_id])
+    @booking = Booking.create(user: @user, location_id: params[:location_id], datesRange: params[:datesRange], numOfTravelers: params[:numOfTravelers])
 
-    render json: LocationSerializer.new(@booking.location).as_json.merge({booking_id: @booking.id})
+    render json: LocationSerializer.new(@booking.location).as_json.merge(@booking.infoHash)
   end
 end

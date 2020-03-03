@@ -9,7 +9,7 @@ class UserSerializer < ActiveModel::Serializer
 
   def locationsBooked
     self.object.bookings.map do |booking|
-      LocationSerializer.new(booking.location).as_json.merge({booking_id: booking.id})
+      LocationSerializer.new(booking.location).as_json.merge(booking.infoHash)
     end
   end
 end
