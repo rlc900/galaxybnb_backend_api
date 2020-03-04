@@ -4,10 +4,10 @@ Type.destroy_all
 Location.destroy_all
 
 
-rm = RestClient.get 'https://swapi.co/api/planets'
-rm_array = JSON.parse(rm)['results']
+starwars_data = RestClient.get 'https://swapi.co/api/planets'
+planet_array = JSON.parse(starwars_data)['results']
 
-rm_array.each do |planet|
+planet_array.each do |planet|
  Planet.create(
  name: planet['name'],
  climate: planet['climate'],
@@ -17,46 +17,46 @@ end
 
 
 alderaan = Planet.find_by(name: 'Alderaan')
-  alderaan.image = 'https://vignette.wikia.nocookie.net/starwars/images/e/e9/AlderaanSystem-TCWAssassin.png/revision/latest?cb=20130513020535'
+  alderaan.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583337142/alderaan_dguedb.png'
   alderaan.save
 
 yavin_4 = Planet.find_by(name: 'Yavin IV')
-  yavin_4.image = 'https://vignette.wikia.nocookie.net/starwars/images/d/d4/Yavin-4-SWCT.png/revision/latest?cb=20181015023938'
+  yavin_4.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338159/yavin_4_d643l4.png'
   yavin_4.save
 
 hoth = Planet.find_by(name: 'Hoth')
-  hoth.image = 'https://66.media.tumblr.com/6e7ff270d6d120913bc835aa07446aee/tumblr_mtvoc7aV1M1qbwnuho1_1280.jpg'
+  hoth.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338146/hoth_b7rivv.png'
   hoth.save
 
 dagobah = Planet.find_by(name: 'Dagobah')
-  dagobah.image = 'https://free3d.com/imgd/l10/5b5e2e5726be8b60548b4567/6606-planet-dagobah.jpg'
+  dagobah.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338374/dagobah_e7ht3q.png'
   dagobah.save
 
 bespin = Planet.find_by(name: 'Bespin')
-  bespin.image = 'https://vignette.wikia.nocookie.net/starwars/images/2/2c/Bespin_EotECR.png/revision/latest?cb=20170222012550'
+  bespin.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338375/bespin_lnichi.png'
   bespin.save
 
 endor = Planet.find_by(name: 'Endor')
-  endor.image = 'https://vignette.wikia.nocookie.net/starwars/images/5/50/Endor_FFGRebellion.png/revision/latest?cb=20170529052722'
+  endor.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338134/Endor_swp5fj.png'
   endor.save
 
 naboo = Planet.find_by(name: 'Naboo')
-  naboo.image = 'https://www.google.com/search?q=naboo+planet&tbm=isch&ved=2ahUKEwiknJ6EyO3nAhUCFVkKHcebDyEQ2-cCegQIABAA&oq=naboo+planet&gs_l=img.3..0j0i7i30l9.53471.54159..54400...0.0..0.215.799.0j2j2......0....1..gws-wiz-img.dy18C2SwS9k&ei=TYZVXuTBDIKq5ALHt76IAg&bih=789&biw=1440&hl=en#imgrc=wuQrgZxQEpJmpM'
+  naboo.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338126/naboo_xltlav.png'
   naboo.save
 
 coruscant = Planet.find_by(name: 'Coruscant')
-  coruscant.image = 'https://vignette.wikia.nocookie.net/starwars/images/8/84/CoruscantGlobeE1.png/revision/latest?cb=20130123002137'
+  coruscant.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338117/coruscant_gwo2mo.png'
   coruscant.save
 
 tatooine = Planet.find_by(name: 'Kamino')
   tatooine.name = 'Tatooine'
   tatooine.climate = 'hot and arid'
   tatooine.terrain = 'canyons, deserts, mountains'
-  tatooine.image = 'https://i.ytimg.com/vi/hzkmWxhTJKU/maxresdefault.jpg'
+  tatooine.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338158/tatooine_qxjaab.png'
   tatooine.save
 
 geonosis = Planet.find_by(name: 'Geonosis')
-  geonosis.image = 'https://vignette.wikia.nocookie.net/starwars/images/6/6d/Geonosis_AotC.png/revision/latest?cb=20121231120327'
+  geonosis.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583340909/Screen_Shot_2020-03-04_at_11.53.13_AM_b5uast.png'
   geonosis.save
 
 
