@@ -6,9 +6,12 @@ class ChargesController < ApplicationController
         # byebug
         Stripe.api_key = ENV['RAILS_API_KEY']
         token = params[:charge][:token]
-        price = params[:price]
+        # price = params[:price]
+        # byebug
+        location = Location.find(params[:location_id])
+
         charge = Stripe::Charge.create({
-            amount: price,
+            amount: location.price * params[:numOfTravelers].to_i,
             currency: 'usd',
             source: token,
             description: 'Test Charge!'
