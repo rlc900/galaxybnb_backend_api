@@ -94,14 +94,14 @@ jungle_hut = Location.create(price: 60, name: 'Jungle Hut', image: 'https://pix1
 
 # ///////HOTH///////
 
-ice_cave = Location.create(price: 60, name: 'Ice Cave', image: 'https://389181.smushcdn.com/1156046/wp-content/uploads/2018/03/IMG_8955-1600x700.jpg?lossy=1&strip=1&webp=1', type_id: cave.id, planet_id: hoth.id)
+ice_cave = Location.create(price: 60, name: 'ice Cave', image: 'https://389181.smushcdn.com/1156046/wp-content/uploads/2018/03/IMG_8955-1600x700.jpg?lossy=1&strip=1&webp=1', type_id: cave.id, planet_id: hoth.id)
 ice_castle = Location.create(price: 240, name: 'Frozen Castle', image: 'https://nuvomagazine.scdn2.secure.raxcdn.com/wp-content/uploads/2019/01/FB-Photo.jpg', type_id: castle.id, planet_id: hoth.id)
-igloo = Location.create(price: 120, name: 'Cute Igloo', image: 'https://ecobnb.com/blog/app/uploads/sites/3/2014/01/Igloo-1-res.jpg', type_id: igloo.id, planet_id: hoth.id)
+igloo = Location.create(price: 120, name: 'Cute igloo', image: 'https://ecobnb.com/blog/app/uploads/sites/3/2014/01/Igloo-1-res.jpg', type_id: igloo.id, planet_id: hoth.id)
 
 
 # ///////DAGOBAH////////
 eerie_cabin = Location.create(price: 120, name: 'Eerie Cabin', image: 'https://i.pinimg.com/originals/81/c9/c7/81c9c73e5db0158ee2a73748eddbe67d.jpg', type_id: cabin.id , planet_id: dagobah.id)
-luke_xwing = Location.create(price: 240, name: 'Lukes Sunken X-Wing', image: 'https://dorksideoftheforce.com/files/2017/09/dagobah-bio-6_62f469f1.jpeg', type_id: x_wing.id, planet_id: dagobah.id)
+luke_xwing = Location.create(price: 240, name: 'Lukes Sunken x-Wing', image: 'https://dorksideoftheforce.com/files/2017/09/dagobah-bio-6_62f469f1.jpeg', type_id: x_wing.id, planet_id: dagobah.id)
 murky_hut = Location.create(price: 60, name: 'Murky Hut', image: 'https://cdna.artstation.com/p/assets/images/images/019/649/572/large/piotr-stanczyk-f1.jpg?1564438764', type_id: hut.id, planet_id: dagobah.id)
 
 # //////BESPIN///////
@@ -120,14 +120,14 @@ forest_cottage = Location.create(price: 120, name: 'Forest Cottage', image: 'htt
 theed_palace = Location.create(price: 240, name: 'Theed\'s Royal Palace', image: 'https://starwarsblog.starwars.com/wp-content/uploads/2014/11/Image-1.jpg', type_id: palace.id, planet_id: naboo.id)
 
 # ////////CORUSCANT////////
-imperial_palace = Location.create(price: 240, name: 'Imperial Palace', image: 'https://vignette.wikia.nocookie.net/starwars/images/d/d5/Imperial_Palace_Crossing_Paths.jpg/revision/latest?cb=20181015071510', type_id: palace.id, planet_id: coruscant.id)
+imperial_palace = Location.create(price: 240, name: 'imperial Palace', image: 'https://vignette.wikia.nocookie.net/starwars/images/d/d5/Imperial_Palace_Crossing_Paths.jpg/revision/latest?cb=20181015071510', type_id: palace.id, planet_id: coruscant.id)
 futuristic_apt = Location.create(price: 120, name: 'Modern City Apartment', image: 'https://blenderartists.org/uploads/default/original/4X/f/5/d/f5d28f40c9ceeb2c7e4ad63753ed1f136edd1f04.jpeg', type_id: apartment.id, planet_id: coruscant.id)
-imperial_base = Location.create(price: 60, name: 'Intergalactic Pad', image: 'https://www.blendswap.com/blend_previews/21341/0/0', type_id: apartment.id, planet_id: coruscant.id)
+imperial_base = Location.create(price: 60, name: 'intergalactic Pad', image: 'https://www.blendswap.com/blend_previews/21341/0/0', type_id: apartment.id, planet_id: coruscant.id)
 
 # ///////KAMINO////////
 rocky_cave = Location.create(price: 60, name: 'Rocky Cave', image: 'https://live.staticflickr.com/8844/28662958252_a88e4da3d1_b.jpg', type_id: cave.id, planet_id: tatooine.id)
 obi_hut = Location.create(price: 120, name: 'obi-Wans Hut', image: 'https://vignette.wikia.nocookie.net/starwars/images/5/52/Kenobihut.jpg/revision/latest/top-crop/width/360/height/450?cb=20180206233134', type_id: hut.id, planet_id: tatooine.id)
-lukes_house= Location.create(price: 240, name: 'Lukes Casa', image: 'https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzE2YmNjMTI5LWY0MmUtNDA4Mi04NGZhLWZhMDE3YWE2ODdkOGJhOTFiZjNlMjI2NGI1YWZiMl9SV0RHV00uanBnIl0sWyJwIiwidGh1bWIiLCJ4MzkwPiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/RWDGWM.jpg', type_id: house.id, planet_id: tatooine.id)
+lukes_house= Location.create(price: 240, name: 'Lukes lil\' hut', image: 'https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzE2YmNjMTI5LWY0MmUtNDA4Mi04NGZhLWZhMDE3YWE2ODdkOGJhOTFiZjNlMjI2NGI1YWZiMl9SV0RHV00uanBnIl0sWyJwIiwidGh1bWIiLCJ4MzkwPiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/RWDGWM.jpg', type_id: house.id, planet_id: tatooine.id)
 
 
 # ////////GEONOSIS////////

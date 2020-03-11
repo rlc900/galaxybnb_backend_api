@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       token = encode_token({user_id: @user.id})
       render json: {user: UserSerializer.new(@user), token: token}
     else
-      render json: { error: 'User is already taken!' }
+      render json: { error: 'user is already taken!' }
     end
   end
 
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
       token = encode_token({user_id: @user.id})
       render json: {user: UserSerializer.new(@user), token: token}
     else
-      render json: {error: 'Invalid username or password'}
+      render json: {error: 'invalid username or password'}
     end
   end
 
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
    # byebug
    @user = User.find(params[:id])
    @user.destroy
-   render json: {message: 'Success!'}
+   render json: {message: 'success!'}
  end
 
 
