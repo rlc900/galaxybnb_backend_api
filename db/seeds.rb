@@ -87,7 +87,7 @@ tranquil_hut = Location.create(price: 120, name: 'Tranquil Hut', image: 'https:/
 house_of_organa = Location.create(price: 240, name: 'House of organa', image: 'https://vignette.wikia.nocookie.net/starwars/images/e/ef/Castle_Organa.png/revision/latest?cb=20150818140835', type_id: palace.id, planet_id: alderaan.id )
 forest_cave = Location.create(price: 60, name: 'Alderaan Forest Cave', image: 'https://www.wallpaperup.com/uploads/wallpapers/2015/04/01/652147/97eff9483949b355f6de716841cc14ff-700.jpg', type_id: cave.id, planet_id: alderaan.id )
 trehuggers_hut = Location.create(price: 120, name: 'Trehuggers Hut', image: 'https://i.pinimg.com/originals/fb/8a/be/fb8abe3208238b3fdfe8a1beb57e7557.jpg', type_id: hut.id, planet_id: alderaan.id)
-creepy_cave = Location.create(price: 60, name: 'Dark & Mysterious Cave', image: 'https://wallpapercave.com/wp/1Xklfvu.jpg', type_id: cave.id, planet_id: alderaan.id)
+creepy_cave = Location.create(price: 60, name: 'Dark, Mysterious Cave', image: 'https://wallpapercave.com/wp/1Xklfvu.jpg', type_id: cave.id, planet_id: alderaan.id)
 elf_house = Location.create(price: 120, name: 'Forest Elf House', image: 'https://i.pinimg.com/originals/5f/c7/17/5fc7178051b5aaad548ac98689881e64.jpg', type_id: house.id, planet_id: alderaan.id)
 
 # //////YAVIN IV//////////
