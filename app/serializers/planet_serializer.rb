@@ -1,5 +1,5 @@
 class PlanetSerializer < ActiveModel::Serializer
-  attributes :id, :name, :climate, :terrain, :images
+  attributes :id, :name, :climate, :terrain, :image
 
   has_many :locations
 
