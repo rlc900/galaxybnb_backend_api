@@ -104,7 +104,7 @@ ice_cave = Location.create(price: 60, name: 'ice Cave', image: 'https://389181.s
 ice_castle = Location.create(price: 240, name: 'Frozen Castle', image: 'https://nuvomagazine.scdn2.secure.raxcdn.com/wp-content/uploads/2019/01/FB-Photo.jpg', type_id: castle.id, planet_id: hoth.id)
 igloo = Location.create(price: 120, name: 'Cute igloo', image: 'https://ecobnb.com/blog/app/uploads/sites/3/2014/01/Igloo-1-res.jpg', type_id: igloo.id, planet_id: hoth.id)
 igloo_home = Location.create(price: 120, name: 'Cozy igloo Home', image: 'https://www.hotelyouwant.com/wp-content/uploads/2018/09/arctic_fox_igloos_hotel.jpg', type_id: house.id, planet_id: hoth.id)
-doom_ice_cave = Location.create(price: 60, name: 'Ice Cave of Doom', image: 'https://vignette.wikia.nocookie.net/legendarymob/images/f/fe/Ice_cave0.jpg/revision/latest?cb=20160924220809', type_id: cave.id, planet_id: hoth.id)
+doom_ice_cave = Location.create(price: 60, name: 'ice Cave of Doom', image: 'https://vignette.wikia.nocookie.net/legendarymob/images/f/fe/Ice_cave0.jpg/revision/latest?cb=20160924220809', type_id: cave.id, planet_id: hoth.id)
 
 # ///////DAGOBAH////////
 eerie_cabin = Location.create(price: 120, name: 'Eerie Cabin', image: 'https://i.pinimg.com/originals/81/c9/c7/81c9c73e5db0158ee2a73748eddbe67d.jpg', type_id: cabin.id , planet_id: dagobah.id)
