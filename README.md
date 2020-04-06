@@ -53,16 +53,16 @@ To launch this application, you'll have to follow these steps:
 
 ## Features
 Users are able to signup/login to their account (you must be logged in to book a trip!)
-![signup/login gif](desktop/gif1.gif)
+![signup/login gif](Desktop/gif1.gif)
 
 The user then fills out a form on the homepage, where they'll be able to input & submit they're travel info!
-![form gif](desktop/gif2.gif)
+![form gif](Desktop/gif2.gif)
 
 Upon submitting, the user is propmpted to the designated planets page, which displays all of the locations to go to for that planet!
-![planet gif](desktop/gif3.gif)
+![planet gif](Desktop/gif3.gif)
 
 After the user decides the destination they'd like to travel to, a confirmation window pops up to confirm all of their information is correct, followed by an already existing card payment method.
-![booking location gif](desktop/gif4.gif)
+![booking location gif](Desktop/gif4.gif)
 
 User is then taken to their profile page, with their booked location & including their information.
 
