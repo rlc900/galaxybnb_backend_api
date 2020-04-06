@@ -54,7 +54,12 @@ To launch this application, you'll have to follow these steps:
 ## Features
 Users are able to signup/login to their account (you must be logged in to book a trip!)
 
-![](galaxy_gif1.gif)
+<p align="center">
+<img src="gif1.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
+
 
 The user then fills out a form on the homepage, where they'll be able to input & submit they're travel info!
 
