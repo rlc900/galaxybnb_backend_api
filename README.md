@@ -1,6 +1,6 @@
 <h1 align="center">Galaxybnb 🪐</h1>
 
-A `React` application that allows users to book vacations on different Star Wars planets!🚀
+A `React` application that allows users to book vacations on different Star Wars planets! 🚀
 
 ## Technologies
 This web app makes use of the following technologies:
