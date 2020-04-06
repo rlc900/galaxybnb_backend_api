@@ -16,7 +16,7 @@ This web app makes use of the following technologies:
 - JWT [~> 2.2] - Cryptographic signing
 - PostgreSQL [>= 0.18, < 2.0] - Database
 
-**Frontend**
+[**Frontend**](https://github.com/rlc900/galaxybnb_frontend)
 - React.js
 - React Router - implemented for delcaritive routing
 - Semantic UI React
