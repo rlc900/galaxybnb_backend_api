@@ -5,7 +5,7 @@ A `React` application that allows users to book vacations on different Star Wars
 ## Technologies
 This web app makes use of the following technologies:
 
-## Backend
+**Backend**
 * Ruby [2.6.1]
 * Rails [~> 6.0.2, >= 6.0.2.1] - MVC web framework used as an API
 * SWAPI (Star Wars API)
@@ -16,7 +16,7 @@ This web app makes use of the following technologies:
 * JWT [~> 2.2] - Cryptographic signing
 * PostgreSQL [>= 0.18, < 2.0] - Database
 
-## Frontend 
+**Frontend**
 * React.js
 * React Router - implemented for delcaritive routing
 * Semantic UI React
@@ -34,7 +34,7 @@ Before you continue, please make sure you have installed the latest version of:
 ## Launch
 To launch this application, you'll have to follow these steps:
 
-## Backend Installation
+**Backend Installation**
 * Clone [this repo](https://github.com/rlc900/galaxybnb_backend_api.git) in your computers terminal.
 * After cloning, `cd` into that directiory `cd galaxy_bnb_api/`.
 * Run `bundle install` to install the required dependencies.
@@ -44,7 +44,7 @@ To launch this application, you'll have to follow these steps:
 * Run `rails db:seed` to create seed data.
 * Run `rails s` to run the server.
 
-## Frontend Installation
+**Frontend Installation**
 * Clone [this repo](https://github.com/rlc900/galaxybnb_frontend.git) in your computers terminal.
 * Make sure your Backend API is running at http://localhost:4000/.
 * Run `npm install` to install all dependencies.
@@ -63,22 +63,42 @@ Users are able to signup/login to their account (you must be logged in to book a
 
 The user then fills out a form on the homepage, where they'll be able to input & submit they're travel info!
 
-![](gif2.gif)
+<p align="center">
+<img src="gif2.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
 
 Upon submitting, the user is propmpted to the designated planets page, which displays all of the locations to go to for that
 planet!
 
-![](gif3.gif)
+<p align="center">
+<img src="gif3.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
 
 After the user decides the destination they'd like to travel to, a confirmation window pops up to confirm all of their
 information is correct, followed by an already existing card payment method.
 
-![](gif4.gif)
+<p align="center">
+<img src="gif4.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
 
 User is then taken to their profile page, with their booked location & including their information.
 
-![](gif5.gif)
+<p align="center">
+<img src="gif5.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
 
 The user is also able to update their username and delete their account!
 
-![](gif6.gif)
+<p align="center">
+<img src="gif6.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
