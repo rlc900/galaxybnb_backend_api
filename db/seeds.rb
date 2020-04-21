@@ -1,10 +1,11 @@
-require 'rest-client'
+# require 'rest-client'
 Planet.destroy_all
 Type.destroy_all
 Location.destroy_all
 
 
-starwars_data = RestClient.get 'https://swapi.co/api/planets'
+starwars_data = RestClient.get('https://swapi.py4e.com/api/planets/')
+
 planet_array = JSON.parse(starwars_data)['results']
 
 planet_array.each do |planet|
@@ -48,16 +49,17 @@ coruscant = Planet.find_by(name: 'Coruscant')
   coruscant.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338117/coruscant_gwo2mo.png'
   coruscant.save
 
-tatooine = Planet.find_by(name: 'Kamino')
-  tatooine.name = 'Tatooine'
-  tatooine.climate = 'hot and arid'
-  tatooine.terrain = 'canyons, deserts, mountains'
+kamino = Planet.find_by(name: 'Kamino')
+  kamino.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1587415017/kamino_hx2d27.png'
+  kamino.save
+
+  tatooine = Planet.find_by(name: 'Tatooine')
   tatooine.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583338158/tatooine_qxjaab.png'
   tatooine.save
 
-geonosis = Planet.find_by(name: 'Geonosis')
-  geonosis.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583340909/Screen_Shot_2020-03-04_at_11.53.13_AM_b5uast.png'
-  geonosis.save
+# geonosis = Planet.find_by(name: 'Geonosis')
+#   geonosis.image = 'https://res.cloudinary.com/dbnxoqlud/image/upload/v1583340909/Screen_Shot_2020-03-04_at_11.53.13_AM_b5uast.png'
+#   geonosis.save
 
 
 rianna = User.create(username: 'rianna', password: '123')
@@ -149,11 +151,11 @@ sandy_hut = Location.create(price: 120, name: 'Sandy Hut', image: 'https://leggy
 desert_house = Location.create(price: 240, name: 'Modern Desert House', image: 'https://2.bp.blogspot.com/-91TPwCENDrY/UP3TtPJxR9I/AAAAAAAAPI4/dEHrjzXrHZQ/s1600/Modern_Desert_House_For_Luxury_Life_In_The_Nature_Scottsdale_Arizona_world_of_architecture_01.jpg', type_id: house.id, planet_id: tatooine.id)
 
 # ////////GEONOSIS////////
-desert_temple = Location.create(price: 240, name: 'Desert Temple', image: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Philae_Temple_R03.jpg', type_id: palace.id, planet_id: geonosis.id)
-baby_hut = Location.create(price: 120, name: 'Baby Desert Hut', image: 'https://nomadsdesertretreat.com/wp-content/uploads/2019/06/D105-6758.jpg', type_id: hut.id, planet_id: geonosis.id)
-desert_cave = Location.create(price: 60, name: 'Desert Cave', image: 'https://live.staticflickr.com/4420/36450569731_a3e0619cb4_b.jpg', type_id: cave.id, planet_id: geonosis.id)
-peaceful_cave = Location.create(price: 60, name: 'Peaceful Cave', image: 'https://desktopwalls.net/wp-content/uploads/2014/09/Desert%20Cave%20Entrance%20Desktop%20Wallpaper.jpg', type_id: cave.id, planet_id: geonosis.id)
-geo_temple = Location.create(price: 240, name: 'The Great Geonosian Temple', image: 'https://www.nationalgeographic.com/content/dam/travel/2016-digital/jordan/world-heritage/petra-world-heritage-jordan.jpg', type_id: palace.id, planet_id: geonosis.id)
+desert_temple = Location.create(price: 240, name: 'Desert Temple', image: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Philae_Temple_R03.jpg', type_id: palace.id, planet_id: kamino.id)
+baby_hut = Location.create(price: 120, name: 'Baby Desert Hut', image: 'https://nomadsdesertretreat.com/wp-content/uploads/2019/06/D105-6758.jpg', type_id: hut.id, planet_id: kamino.id)
+desert_cave = Location.create(price: 60, name: 'Desert Cave', image: 'https://live.staticflickr.com/4420/36450569731_a3e0619cb4_b.jpg', type_id: cave.id, planet_id: kamino.id)
+peaceful_cave = Location.create(price: 60, name: 'Peaceful Cave', image: 'https://desktopwalls.net/wp-content/uploads/2014/09/Desert%20Cave%20Entrance%20Desktop%20Wallpaper.jpg', type_id: cave.id, planet_id: kamino.id)
+geo_temple = Location.create(price: 240, name: 'The Temple of Kamino', image: 'https://www.nationalgeographic.com/content/dam/travel/2016-digital/jordan/world-heritage/petra-world-heritage-jordan.jpg', type_id: palace.id, planet_id: kamino.id)
 
 
 
