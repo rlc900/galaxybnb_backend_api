@@ -36,7 +36,7 @@ To launch this application, you'll have to follow these steps:
 
 **Backend Installation**
 - Clone [this repo](https://github.com/rlc900/galaxybnb_backend_api.git) in your computers terminal.
-- After cloning, `cd` into that directiory `cd galaxy_bnb_api/`.
+- After cloning, `cd` into that directiory `cd galaxy_backend_api/`.
 - Run `bundle install` to install the required dependencies.
 - Make sure PostgreSQL is running on your machine.
 - Run `rails db:create` to create a database locally.
